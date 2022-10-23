@@ -1,13 +1,11 @@
 import * as React from "react";
-import {Link} from "gatsby";
+import Layout from "../components/layout";
 
-const aboutPage = () => {
+const AboutPage = () => {
     return (
-        <main>
-            <h1>About Me</h1>
+        <Layout pageTitle={"About Me"}>
             <p>Hi there! You shouldn't be interested in me, I'm not even Giel! Or Daan! You should meet them!</p>
-            <Link to={"/"}>Back</Link>
-        </main>
+        </Layout>
     )
 }
 
@@ -17,4 +15,4 @@ export const Head = () => <title>About Me</title>
 
 //pages created in src/pages directory use the name of the file as the route for the page
 
-export default aboutPage
+export default AboutPage

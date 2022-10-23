@@ -1,16 +1,19 @@
 import * as React from "react";
-import {Link} from "gatsby";
+import Layout from "../components/layout";
 
-const indexPage = () => {
+const IndexPage = () => {
     return (
-        <main>
-            <h1>Welcome to my Giel worship page!</h1>
-            <Link to={"/about"}>About</Link>
-            <p>This is where we worship the birth of Giel.</p>
-        </main>
+        // <main>
+        //     <h1>Welcome to my Giel worship page!</h1>
+        //     <Link to={"/about"}>About</Link>
+        //     <p>This is where we worship the birth of Giel.</p>
+        // </main>
+        <Layout pageTitle={"Home Page"}>
+            <p>This is where we worship Giel. Praise him!</p>
+        </Layout>
     )
 }
 
-export const Head = () => {<title>Home Page</title>}
+export const Head = () => <title>Home Page</title>
 
-export default indexPage
+export default IndexPage
